@@ -10,11 +10,11 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [15.x]
+        node-version: [12.x]
 
     steps:
       -name: Checkout
-       uses: actions/checkout@v1
+       uses: actions/checkout@v2
 
       -name: Install and Build
        run: npm Install && npm run build
